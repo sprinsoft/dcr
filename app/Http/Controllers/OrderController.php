@@ -15,8 +15,7 @@ class OrderController extends Controller
 
     public function placeOrder(Request $request){
     	try{
-    		//dd('ok');
-    		//return view('order.placeOrder');
+    		
     		return view('order.placeOrder');
     	}catch(Exception $ex){
     		dd($ex->getMessage(),$ex->getLine());
